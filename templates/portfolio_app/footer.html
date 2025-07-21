@@ -1,0 +1,38 @@
+{% load static %}
+   <!-- FOOTER AREA START -->
+   <footer class="tj-footer-area">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 text-center">
+             <div class="footer-logo-box">
+                <a href="#"><img src="{% static 'portfolio_app/assets/img/logo/asl-logo.png' %}" alt="" /></a>
+             </div>
+             <div class="footer-menu">
+                <nav>
+                  <ul>
+                     <li class="{% if request.resolver_match.url_name == 'index' %}current-menu-item{% endif %}">
+                         <a href="{% url 'index' %}">Home</a>
+                     </li>
+                     <li class="{% if request.resolver_match.url_name == 'about' %}current-menu-item{% endif %}">
+                         <a href="{% url 'about' %}">About</a>
+                     </li>
+                     <li class="{% if request.resolver_match.url_name == 'services' %}current-menu-item{% endif %}">
+                         <a href="{% url 'services' %}">Services</a>
+                     </li>
+                     <li class="{% if request.resolver_match.url_name == 'projects' %}current-menu-item{% endif %}">
+                         <a href="{% url 'projects' %}">Projects</a>
+                     </li>
+                     <li class="{% if request.resolver_match.url_name == 'contact' %}current-menu-item{% endif %}">
+                         <a href="{% url 'contact' %}">Contact</a>
+                     </li>
+                 </ul>
+                </nav>
+             </div>
+             <div class="copy-text">
+                <p>&copy; 2025 All rights reserved by <a href="#" target="_blank">ThemeJunction</a></p>
+             </div>
+          </div>
+       </div>
+    </div>
+ </footer>
+ <!-- FOOTER AREA END -->

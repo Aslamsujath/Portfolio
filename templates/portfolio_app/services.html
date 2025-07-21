@@ -1,0 +1,103 @@
+{% extends "portfolio_app/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- START: Breadcrumb Area -->
+<section class="breadcrumb_area" data-bg-image="./portfolio_app/assets/img/breadcrumb/breadcrumb-bg.jpg" data-bg-color="#140C1C">
+   <div class="container">
+      <div class="row">
+         <div class="col">
+            <div class="breadcrumb_content d-flex flex-column align-items-center">
+               <h2 class="title wow fadeInUp" data-wow-delay=".3s">Services</h2>
+               <div class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
+                  <span><a href="{% url 'index' %}">Home</a></span>
+                  <i class="far fa-long-arrow-right"></i>
+                  <span class="current-item">Services</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- END: Breadcrumb Area -->
+
+<!-- start: Service Area -->
+<section class="service-section">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="section-header text-center">
+               <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">Services</h2>
+               <p class="wow fadeInUp" data-wow-delay=".4s">
+                  I specialize in building efficient, secure, and scalable web applications using modern backend technologies.
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <!-- Web Development -->
+         <div class="col-lg-6">
+            <div class="service-item wow fadeInLeft" data-wow-delay=".3s">
+               <div class="service-icon">
+                  <i class="flaticon-code"></i>
+               </div>
+               <div class="service-content">
+                  <h5 class="title">Web Development</h5>
+                  <div class="desc">
+                     <p>Build functional and responsive web applications using Django for the backend and HTML/CSS for the frontend.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- REST API Development -->
+         <div class="col-lg-6">
+            <div class="service-item wow fadeInRight" data-wow-delay=".3s">
+               <div class="service-icon">
+                  <i class="flaticon-ux-design"></i>
+               </div>
+               <div class="service-content">
+                  <h5 class="title">REST API Development</h5>
+                  <div class="desc">
+                     <p>Build secure and scalable RESTful APIs for web apps or mobile apps using Django REST Framework.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Database Creation -->
+         <div class="col-lg-6">
+            <div class="service-item wow fadeInLeft" data-wow-delay=".4s">
+               <div class="service-icon">
+                  <i class="fas fa-database"></i>
+               </div>
+               <div class="service-content">
+                  <h5 class="title">Database Creation</h5>
+                  <div class="desc">
+                     <p>Design efficient databases and optimize queries for performance, scalability, and data integrity.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Website Maintenance -->
+         <div class="col-lg-6">
+            <div class="service-item wow fadeInRight" data-wow-delay=".4s">
+               <div class="service-icon">
+                  <i class="fas fa-tools"></i>
+               </div>
+               <div class="service-content">
+                  <h5 class="title">Website Maintenance</h5>
+                  <div class="desc">
+                     <p>Improve site performance, fix bugs, and ensure security and reliability with ongoing support and updates.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- end: Service Area -->
+
+{% endblock %}

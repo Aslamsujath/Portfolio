@@ -1,0 +1,245 @@
+
+{% extends 'portfolio_app/base.html' %}
+
+{% load static %}
+  
+{% block content %}
+       <!-- START: Breadcrumb Area -->
+       <section class="breadcrumb_area" data-bg-image="./portfolio_app/assets/img/breadcrumb/breadcrumb-bg.jpg" data-bg-color="#140C1C">
+          <div class="container">
+             <div class="row">
+                <div class="col">
+                   <div class="breadcrumb_content d-flex flex-column align-items-center">
+                      <h2 class="title wow fadeInUp" data-wow-delay=".3s">About</h2>
+                      <div class="breadcrumb_navigation wow fadeInUp" data-wow-delay=".5s">
+                         <span><a href="index.html">Home</a></span>
+                         <i class="far fa-long-arrow-right"></i>
+                         <span class="current-item">About</span>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <!-- END: Breadcrumb Area -->
+ 
+       <!-- start: Works Area -->
+      <section class="works-section style-2" id="resume-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-header text-center">
+                     <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Resume</h2>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="works-content-item">
+                     <h3 class="title wow fadeInLeft" data-wow-delay=".3s">Education</h3>
+                     <div class="works-inner wow fadeInUp" data-wow-delay=".4s">
+                        <div class="works-item">
+                           <div class="works-icon">
+                              <i class="flaticon-graduation-cap"></i>
+                           </div>
+                           <div class="works-content">
+                              <span class="number">2020 - 2024</span>
+                              <h5 class="title">B.E. - Computer Science</h5>
+                              <span class="sub-title">Government College of Engineering, Srirangam</span>
+                           </div>
+                        </div>
+                        <div class="works-item">
+                           <div class="works-icon">
+                              <i class="flaticon-graduation-cap"></i>
+                           </div>
+                           <div class="works-content">
+                              <span class="number">2018 - 2020</span>
+                              <h5 class="title">Higher Secondary (HSC)</h5>
+                              <span class="sub-title">Popular Matric Hr. Sec. School</span>
+                           </div>
+                        </div>
+                        <div class="works-item">
+                           <div class="works-icon">
+                              <i class="flaticon-graduation-cap"></i>
+                           </div>
+                           <div class="works-content">
+                              <span class="number">2017 - 2018</span>
+                              <h5 class="title">SSLC</h5>
+                              <span class="sub-title">New Sanggeeth Matric Hr. Sec. School</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="works-content-item">
+                     <h3 class="title wow fadeInRight" data-wow-delay=".3s">Work Experience</h3>
+                     <div class="works-inner wow fadeInUp" data-wow-delay=".4s">
+                        <div class="works-item">
+                           <div class="works-icon">
+                              <i class="flaticon-suitcase"></i>
+                           </div>
+                           <div class="works-content">
+                              <span class="number">2024 - Present</span>
+                              <h5 class="title">Software Developer</h5>
+                              <span class="sub-title">M7 Corporation, Chennai</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+            </section>
+      <!-- end: Works Area -->
+
+
+<!-- SKILLS SECTION START -->
+<section class="skills-section" id="skills-section">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="section-header text-center">
+               <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Skills</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="skills-widget d-flex flex-wrap justify-content-center align-items-center" >
+               <div class="skill-item wow fadeInUp" data-wow-delay=".3s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/skills-1.svg' %}" alt="" />
+                     </div>
+                     <div class="number">92%</div>
+                  </div>
+                  <p>HTML</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".4s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/skills-2.svg' %}" alt="" />
+                     </div>
+                     <div class="number">80%</div>
+                  </div>
+                  <p>CSS3</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".5s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/skills-3.svg' %}" alt="" />
+                     </div>
+                     <div class="number">70%</div>
+                  </div>
+                  <p>Javascript</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".6s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/python.svg' %}" alt="" />
+                     </div>
+                     <div class="number">80%</div>
+                  </div>
+                  <p>Python</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".7s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/django.svg' %}" alt="" />
+                     </div>
+                     <div class="number">90%</div>
+                  </div>
+                  <p>Django</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".8s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img src="{% static 'portfolio_app/assets/img/icons/mysql-1.svg' %}" alt="" />
+                     </div>
+                     <div class="number">82%</div>
+                  </div>
+                  <p>MySQL</p>
+               </div>
+               <div class="skill-item wow fadeInUp" data-wow-delay=".9s"
+                  style="flex: 1 1 calc(14.28% - 8px); min-width: 100px; max-width: 150px;">
+                  <div class="skill-inner">
+                     <div class="icon-box">
+                        <img style="width: 60px; height: 60px; border-radius: 5px;"
+                           src="{% static 'portfolio_app/assets/img/icons/restapi-1.svg' %}" alt="" />
+                     </div>
+                     <div class="number">82%</div>
+                  </div>
+                  <p>RestAPI</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- SKILLS SECTION END -->
+ 
+       <!-- start: Counter Area -->
+       <section class="counter-section">
+          <div class="container">
+             <div class="row">
+    <div class="col-6 col-lg-3">
+      <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+        <div class="number"><span class="odometer" data-count="1">0</span>+</div>
+        <div class="text">Years of <br />Experience</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+        <div class="number"><span class="odometer" data-count="5">0</span>+</div>
+        <div class="text">Projects <br />Completed</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+        <div class="number"><span class="odometer" data-count="100">0</span>%</div>
+        <div class="text">Client <br />Satisfaction</div>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <div class="funfact-item d-flex flex-column flex-sm-row flex-wrap align-items-center">
+        <div class="number"><span class="odometer" data-count="500">0</span>+</div>
+        <div class="text">Hours of <br />Coding</div>
+      </div>
+    </div>
+  </div>
+          </div>
+       </section>
+       <!-- end: Counter Area -->
+ 
+       <!-- start: Text Area -->
+       <section class="text-section">
+          <div class="container">
+             <div class="row">
+                <div class="col-12">
+                   <div class="section-header">
+                      <div class="heading-left">
+                         <p class="wow fadeInUp" data-wow-delay=".3s">Want to start a project?</p>
+                         <h2 id="anim" class="section-title wow fadeInUp" data-wow-delay=".4s">Let’s have a chat</h2>
+                      </div>
+                      <div class="chat-mail wow fadeInRight" data-wow-delay=".5s">
+   <a class="link" href="mailto:aslamsujath25@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Aslam,%0D%0A%0D%0AI would like to connect with you regarding...">
+      aslamsujath25@gmail.com <i class="fa-light fa-arrow-right"></i>
+   </a>
+</div>
+
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <!-- end: Text Area -->
+
+{% endblock %}
