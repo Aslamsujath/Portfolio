@@ -115,29 +115,27 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
+# # Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
 
-STATIC_URL = "/static/"
+# Directory where Django will collect all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# In production (Vercel), collect static files to this directory
-if 'VERCEL' in os.environ:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATICFILES_DIRS = []
-else:
-    # In development, look for static files in these directories
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
-    ]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# Directories where Django will search for static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
-# Use WhiteNoise to serve static files
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# Storage backend for static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-MEDIA_URL = "/media/"
+# Media files
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# WhiteNoise configuration
+# WhiteNoise settings
 WHITENOISE_USE_FINDERS = True
 WHITENOISE_AUTOREFRESH = True
