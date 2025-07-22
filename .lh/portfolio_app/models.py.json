@@ -1,0 +1,22 @@
+{
+    "sourceFile": "portfolio_app/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1753168060005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753168096553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n     name=models.CharField(max_length=50,null=True,blank=True)\r\n     email=models.EmailField(max_length=50,null=True,blank=True)\r\n     phone_number=models.IntegerField(null=True,blank=True)\r\n     remarks=models.TextField(null=True,blank=True)\r\n-    services = models.CharField(null=True, blank=True)\r\n+    services = models.CharField(max_length=50,null=True, blank=True)\r\n     created_at = models.DateField(null=True, blank=True)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1753168060005,
+            "name": "Commit-0",
+            "content": "from django.db import models\r\n\r\n# Create your models here.\r\nclass Contact(models.Model):\r\n    name=models.CharField(max_length=50,null=True,blank=True)\r\n    email=models.EmailField(max_length=50,null=True,blank=True)\r\n    phone_number=models.IntegerField(null=True,blank=True)\r\n    remarks=models.TextField(null=True,blank=True)\r\n    services = models.CharField(null=True, blank=True)\r\n    created_at = models.DateField(null=True, blank=True)"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "sourceFile": "vercel.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1753168651282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753168662238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,1 @@\n-// {\r\n-//     \"builds\": [{\r\n-//         \"src\": \"portfolio_project/wsgi.py\",\r\n-//         \"use\": \"@vercel/python\",\r\n-//         \"config\": { \"maxLambdaSize\": \"15mb\", \"runtime\": \"python3.9\" }\r\n-//     },\r\n-//     {\r\n-//         \"src\": \"build_files.sh\",\r\n-//         \"use\": \"@vercel/static-build\",\r\n-//         \"config\": { \"distDir\": \"staticfiles_build\" }\r\n-//     }],\r\n-//     \"routes\": [\r\n-//         {\r\n-//             \"src\": \"/static/(.*)\",\r\n-//             \"dest\": \"/static/$1\"\r\n-//         },\r\n-//         {\r\n-//             \"src\": \"/(.*)\",\r\n-//             \"dest\": \"portfolio_project/wsgi.py\"\r\n-//         }\r\n-//     ]\r\n-// }\n\\ No newline at end of file\n+#\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753168669954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-#\n\\ No newline at end of file\n+{\r\n+  \"buildCommand\": \"pip install -r requirements.txt && python manage.py collectstatic --noinput\",\r\n+  \"outputDirectory\": \"staticfiles_build\"\r\n+}\r\n"
+                },
+                {
+                    "date": 1753169166265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,22 @@\n {\r\n-  \"buildCommand\": \"pip install -r requirements.txt && python manage.py collectstatic --noinput\",\r\n-  \"outputDirectory\": \"staticfiles_build\"\r\n-}\r\n+    \"builds\": [{\r\n+        \"src\": \"portfolio_project/wsgi.py\",\r\n+        \"use\": \"@vercel/python\",\r\n+        \"config\": { \"maxLambdaSize\": \"15mb\", \"runtime\": \"python3.9\" }\r\n+    },\r\n+    {\r\n+        \"src\": \"build_files.sh\",\r\n+        \"use\": \"@vercel/static-build\",\r\n+        \"config\": { \"distDir\": \"staticfiles_build\" }\r\n+    }],\r\n+    \"routes\": [\r\n+        {\r\n+            \"src\": \"/static/(.*)\",\r\n+            \"dest\": \"/staticfiles_build/static/$1\"\r\n+        },\r\n+        {\r\n+            \"src\": \"/(.*)\",\r\n+            \"dest\": \"portfolio_project/wsgi.py\"\r\n+        }\r\n+    ]\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753170131281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,7 @@\n         {\r\n             \"src\": \"/(.*)\",\r\n             \"dest\": \"portfolio_project/wsgi.py\"\r\n         }\r\n-    ]\r\n+    ],\r\n+    \"outputDirectory\": \"staticfiles_build\"\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1753168651282,
+            "name": "Commit-0",
+            "content": "// {\r\n//     \"builds\": [{\r\n//         \"src\": \"portfolio_project/wsgi.py\",\r\n//         \"use\": \"@vercel/python\",\r\n//         \"config\": { \"maxLambdaSize\": \"15mb\", \"runtime\": \"python3.9\" }\r\n//     },\r\n//     {\r\n//         \"src\": \"build_files.sh\",\r\n//         \"use\": \"@vercel/static-build\",\r\n//         \"config\": { \"distDir\": \"staticfiles_build\" }\r\n//     }],\r\n//     \"routes\": [\r\n//         {\r\n//             \"src\": \"/static/(.*)\",\r\n//             \"dest\": \"/static/$1\"\r\n//         },\r\n//         {\r\n//             \"src\": \"/(.*)\",\r\n//             \"dest\": \"portfolio_project/wsgi.py\"\r\n//         }\r\n//     ]\r\n// }"
+        }
+    ]
+}

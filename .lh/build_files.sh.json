@@ -1,0 +1,22 @@
+{
+    "sourceFile": "build_files.sh",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1753169942551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753170098533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+#!/bin/bash\n \n- python3.9 -m pip install -r requirements.txt\n- python3.9 manage.py collectstatic --noinput --clear\n\\ No newline at end of file\n- echo \"BUILD END\"\n+# Install dependencies\n+pip install -r requirements.txt\n+\n+# Collect static files\n+python3.9 manage.py collectstatic --noinput --clear\n"
+                }
+            ],
+            "date": 1753169942551,
+            "name": "Commit-0",
+            "content": "\n python3.9 -m pip install -r requirements.txt\n python3.9 manage.py collectstatic --noinput --clear\n echo \"BUILD END\""
+        }
+    ]
+}
